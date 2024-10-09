@@ -133,6 +133,16 @@ def reportes_financieros():
 def cashier_functions():
     return render_template('cashier_functions.html')
 
+@app.route('/calcular_nomina')
+def calcular_nomina():
+    return render_template('calcular_nomina.html')
+
+@app.route('/eliminar_empleado')
+def eliminar_empleado():
+    return render_template('eliminar_empleado.html')
+
+
+
 @app.route('/process_sale')
 def process_sale():
     return render_template('process_sale.html')
